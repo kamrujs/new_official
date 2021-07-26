@@ -202,9 +202,17 @@ body {
 
 /* ============= nav start here */
 
-.navbar .navbar-brand {
-    padding: 0 !important;
+.navbar {
+    transition: .5s !important;
+    position: fixed !important;
+    width: 100%;
+    z-index: 9999;
 }
+
+.navbar .navbar-brand img {
+    transition: .5s;
+}
+
 
 .navbar ul li a {
     font-size: 20px;
@@ -283,6 +291,28 @@ body {
     transform: rotate(-35deg);
 }
 
+
+.fixedMenu {
+    box-shadow: 0px 2px 21px 13px rgba(138, 97, 97, 0.10);
+}
+
+.fixedMenu {
+    padding: 0 !important;
+    padding-bottom: .5rem !important;
+}
+
+.fixedMenu .navbar-brand {
+    padding: 0 !important;
+}
+
+.fixedMenu ul li a {
+    margin: 0 8px;
+}
+
+.fixedMenu ul li a {
+    font-size: 18px;
+}
+
 /* ============= nav end here */
 
 
@@ -291,8 +321,8 @@ body {
 /* ============= hero start here */
 
 #banner_hero {
-    padding-top: 145px;
-    padding-bottom: 60px;
+    padding: 250px 0 100px;
+    position: relative;
 }
 
 #banner_hero ul {
@@ -315,7 +345,40 @@ body {
 }
 
 .scroll_down {
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
     text-align: center;
+    animation: myScroll 4.5s infinite linear;
+    transform: translateX(-50%);
+}
+
+
+@keyframes myScroll {
+    0% {
+        right: 0px;
+        bottom: 20px;
+    }
+
+    25% {
+        bottom: 5px;
+        right: 0px;
+    }
+
+    50% {
+        right: 0px;
+        bottom: 20px;
+    }
+
+    75% {
+        bottom: 5px;
+        right: 0px;
+    }
+
+    100% {
+        right: 0px;
+        bottom: 20px;
+    }
 }
 
 .scroll_down a {
@@ -346,7 +409,7 @@ body {
 /* ============= about start here */
 
 #about_section {
-    padding: 60px 0;
+    padding: 100px 0 40px;
 }
 
 .about_img {
@@ -382,7 +445,7 @@ body {
 /* ============= skills start here */
 
 #skills_section {
-    padding: 60px;
+    padding: 100px 0 0;
 }
 
 #skills_section .accordion-item h2 img {
@@ -468,7 +531,7 @@ body {
 /* ============= service start here */
 
 #services {
-    padding: 60px 0;
+    padding: 100px 0 40px;
 }
 
 #services .slide_item {
@@ -566,7 +629,7 @@ body {
 /* ============= portfolio end here */
 
 #portfolio {
-    padding: 60px 0;
+    padding: 100px 0 40px;
     text-align: center;
 }
 
@@ -698,7 +761,7 @@ body {
 /* ============= contact_me end here */
 
 #contact_me {
-    padding: 60px 0;
+    padding: 100px 0 40px;
 }
 
 #contact_me .cont {
@@ -823,4 +886,54 @@ footer ul li a {
 footer ul li a:hover {
     color: #10AC84;
     transform: translateY(-5px);
+}
+
+
+/* ===== back to top */
+
+/*====================*/
+/*-- Back to top --*/
+/*====================*/
+#back_to_top {
+    /* opacity: 0; */
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    font-size: 25px;
+    background: #10AC84;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 55px;
+    animation: myBtn 5.5s infinite linear;
+}
+
+
+@keyframes myBtn {
+    0% {
+        right: 3rem;
+        bottom: 4rem;
+    }
+
+    25% {
+        bottom: 2rem;
+        right: 3rem;
+    }
+
+    50% {
+        right: 3rem;
+        bottom: 4rem;
+    }
+
+    75% {
+        bottom: 2rem;
+        right: 3rem;
+    }
+
+    100% {
+        right: 3rem;
+        bottom: 4rem;
+    }
 }
