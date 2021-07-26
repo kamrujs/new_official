@@ -257,3 +257,7 @@ $(window).scroll(function () {
 })
 
 // ----- end
+
+jQuery('.scroll').onePgaeNav({
+    wrapper: '#onepage-nav',
+});
