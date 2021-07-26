@@ -130,7 +130,7 @@ $('.service_lisr_slider').slick({
             }
         },
         {
-            breakpoint: 480,
+            breakpoint: 576,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -174,7 +174,7 @@ $('.port_slider').slick({
             }
         },
         {
-            breakpoint: 480,
+            breakpoint: 576,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -261,3 +261,27 @@ $(window).scroll(function () {
 jQuery('.scroll').onePgaeNav({
     wrapper: '#onepage-nav',
 });
+
+
+
+
+
+
+// ============= small screen side bar
+
+
+
+
+
+// $(document).on('resize, ready', function () {
+//     // Add class if screen size equals
+//     var $window = $(window),
+//         $html = $('html');
+
+//     function resize() {
+//         if ($window.width() < 992) {
+//             return $(".side_bar").addClass('show_bar');
+//         } else $(".side_bar").removeClass('show_bar');
+//     }
+//     $window.resize(resize).trigger('resize');
+// });
