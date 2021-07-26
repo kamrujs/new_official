@@ -1,4 +1,156 @@
+/* ======= small device */
+
+
 @media (min-width: 320px) and (max-width: 575.98px) {
+
+    .headding {
+        font-size: 35px;
+    }
+
+    .sub_headding {
+        font-size: 22px;
+    }
+
+    .neno_sub_headding {
+        font-size: 18px;
+    }
+
+    .pragrath {
+        font-size: 14px;
+    }
+
+    .greenbtn {
+        padding: 5px 15px;
+        line-height: 35px;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    .head_tittle {
+        font-size: 28px;
+    }
+
+    .sub_tittle {
+        font-size: 13px;
+    }
+
+    .tittle {
+        margin-bottom: 25px;
+    }
+
+    /* ===== common css */
+
+
+
+
+
+
+
+    #banner_hero {
+        padding: 150px 0 60px;
+        position: relative;
+    }
+
+    #banner_hero .row {
+        flex-direction: column-reverse;
+    }
+
+    .hero_text {
+        margin-top: 75px;
+    }
+
+    #banner_hero ul li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+    #banner_hero ul {
+        padding-top: 15px;
+    }
+
+    /* ========= about sec */
+    #about_section {
+        padding: 40px 0 40px;
+    }
+
+    #about_section .sub_headding {
+        margin-top: 45px;
+    }
+
+    .about_item p {
+        font-size: 12px;
+    }
+
+
+
+    /* ========= skills_section */
+
+    #skills_section {
+        padding: 40px 0 0;
+    }
+
+    .skills_bar {
+        padding: 0 20px 0 80px;
+    }
+
+
+
+    /* ========= services */
+
+    #services {
+        padding: 60px 0 40px;
+    }
+
+
+    /* ========= portfolio */
+
+    #portfolio {
+        padding: 60px 0 20px;
+        text-align: center;
+    }
+
+    /* ========= new_project */
+
+
+    #new_project .contant {
+        width: auto;
+        text-align: center;
+        margin: 0 20px !important;
+    }
+
+
+    #contact_me {
+        padding: 60px 0 40px;
+    }
+
+    #contact_me a {
+        width: 50%;
+    }
+
+
+    #contact_me form {
+        margin-top: 40px;
+    }
+
+    #contact_me .item {
+        width: 100%;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+
+
+
+
+    /*  */
+}
+
+
+/* ============ mid device */
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
 
     .headding {
         font-size: 35px;
