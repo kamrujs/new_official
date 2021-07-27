@@ -39,13 +39,6 @@
     }
 
     /* ===== common css */
-
-
-
-
-
-
-
     #banner_hero {
         padding: 150px 0 60px;
         position: relative;
@@ -113,14 +106,21 @@
     }
 
     /* ========= new_project */
-
-
     #new_project .contant {
         width: auto;
         text-align: center;
         margin: 0 20px !important;
+        flex-direction: column-reverse;
     }
 
+    #new_project .text {
+        width: 100%;
+    }
+
+    #new_project .img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 
     #contact_me {
         padding: 60px 0 40px;
@@ -143,8 +143,38 @@
         padding: 20px 0;
     }
 
+    .back_to_top {
+        font-size: 12px;
+        width: 25px;
+        height: 30px;
+    }
 
+    @keyframes myBtn {
+        0% {
+            right: .5rem;
+            bottom: 4rem;
+        }
 
+        25% {
+            bottom: 2rem;
+            right: .5rem;
+        }
+
+        50% {
+            right: .5rem;
+            bottom: 4rem;
+        }
+
+        75% {
+            bottom: 2rem;
+            right: .5rem;
+        }
+
+        100% {
+            right: .5rem;
+            bottom: 4rem;
+        }
+        }
 
     /*  */
 }
@@ -265,12 +295,20 @@
     }
 
     /* ========= new_project */
-
-
     #new_project .contant {
         width: auto;
         text-align: center;
         margin: 0 20px !important;
+        flex-direction: column-reverse;
+        }
+
+        #new_project .text {
+            width: 100%;
+        }
+
+        #new_project .img {
+            width: 100%;
+            margin-bottom: 20px;
     }
 
 
@@ -296,6 +334,38 @@
     }
 
 
+    .back_to_top {
+        font-size: 12px;
+        width: 25px;
+        height: 30px;
+    }
+
+    @keyframes myBtn {
+        0% {
+            right: .5rem;
+            bottom: 4rem;
+        }
+
+        25% {
+            bottom: 2rem;
+            right: .5rem;
+        }
+
+        50% {
+            right: .5rem;
+            bottom: 4rem;
+        }
+
+        75% {
+            bottom: 2rem;
+            right: .5rem;
+        }
+
+        100% {
+            right: .5rem;
+            bottom: 4rem;
+        }
+    }
 
 
     /*  */

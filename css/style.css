@@ -758,6 +758,10 @@ body {
     padding: 30px 0;
 }
 
+#new_project img {
+    width: 100%;
+}
+
 #new_project .contant {
     width: 840px;
     border-radius: 15px;
