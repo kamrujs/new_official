@@ -21,11 +21,12 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/jquery.rprogessbar.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/resoinsive.css">
 </head>
 
-<body>
+<body id="body_dark">
 
 
 
@@ -34,7 +35,7 @@
 
     <!-- ============== nav-section sart here -->
 
-    <nav class="navbar navbar-expand-lg bg-light addFix nav-wrap">
+    <nav class="navbar navbar-expand-lg addFix nav-wrap" data-aos="fade-down">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="images/logo.png" alt="logo">
@@ -67,7 +68,7 @@
                 </ul>
             </div>
             <div class="dark_btn">
-                <a class="nav-link" href="#"> <i class="fas fa-moon"></i> </a>
+                <i class="fas fa-moon"></i>
             </div>
         </div>
     </nav>
@@ -80,20 +81,20 @@
     <section id="banner_hero" class="section">
         <div class="container">
             <div class="row center">
-                <div class="col-lg-1">
+                <div class="col-lg-1" data-aos="fade-right">
                     <div class="hero_icon">
                         <ul>
                             <li><a class="hero_s_icon " href="https://www.linkedin.com/in/kamrujs/" target="_blank"> <i
-                                        class="fab fa-linkedin-in"></i> </a></li>
+                                        class="rotate fab fa-linkedin-in"></i> </a></li>
                             <li><a class="hero_s_icon " href="https://www.facebook.com/kamrujs/" target="_blank"> <i
-                                        class="fab fa-facebook-f"></i> </a>
+                                        class="rotate fab fa-facebook-f"></i> </a>
                             </li>
                             <li><a class="hero_s_icon " href="https://github.com/kamrujs" target="_blank"> <i
-                                        class="fab fa-github"></i> </a></li>
+                                        class="rotate fab fa-github"></i> </a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="fade-right">
                     <div class="hero_text">
                         <h5 class="neno_sub_headding"> Hello! I'am </h5>
                         <h2 class="my-2 headding">KAMRUJ Z AKASH</h2>
@@ -105,7 +106,7 @@
                         <a href="#" class="greenbtn mt-4"> Contact Me <i class="fas fa-chevron-right"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-3 offset-lg-1">
+                <div class="col-lg-3 offset-lg-1" data-aos="fade-left">
                     <img src="images/profile.png" alt="profile">
                 </div>
             </div>
@@ -122,17 +123,17 @@
 
     <section id="about_section" class="section">
         <div class="container">
-            <div class="tittle">
+            <div class="tittle" data-aos="zoom-in-down">
                 <h4 class="head_tittle">About ME</h4>
                 <p class="sub_tittle">My Introduction</p>
             </div>
             <div class="row center ">
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="fade-right">
                     <div class="about_img">
                         <img src="images/abou_img.png" alt="abou_img">
                     </div>
                 </div>
-                <div class="col-lg-5 offset-lg-1">
+                <div class="col-lg-5 offset-lg-1" data-aos="fade-left">
                     <h4 class="sub_headding mb-3">hi !... this is <span class=" greenfont"> AKASH</span></h4>
                     <p class="pragrath mb-4"><span>Front-end web developer, with extensive</span>
                         <span> knowlegde and enough of expreience,</span>
@@ -168,78 +169,71 @@
 
     <section id="skills_section" class="section">
         <div class="container">
-            <div class="tittle">
+            <div class="tittle" data-aos="zoom-in-down">
                 <h4 class="head_tittle">Skills</h4>
                 <p class="sub_tittle">My technical level</p>
             </div>
             <div class="row center">
-                <div class="col-lg-4">
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2>
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <img src="images/codeing.png" alt="codeing">
-                                    <span class="neno_sub_headding"> Frontend Development</span>
-                                    <span class="pragrath">More then 3 yesrs</span>
-                                </button>
-                            </h2>
-                            <div class="skills_bar">
-                                <div>
-                                    <h4 class="pragrath">HTML</h4>
-                                    <div class="progress_html"></div>
-                                </div>
-                                <div>
-                                    <h4 class="pragrath">CSS</h4>
-                                    <div class="progress_css"></div>
-                                </div>
-                                <div>
-                                    <h4 class="pragrath">Bootstrap</h4>
-                                    <div class="progress_bs"></div>
-                                </div>
-                                <div>
-                                    <h4 class="pragrath">SASS / SASS</h4>
-                                    <div class="progress_sass"></div>
-                                </div>
-                                <div>
-                                    <h4 class="pragrath">JavaScript</h4>
-                                    <div class="progress_js"></div>
-                                </div>
+                <div class="col-lg-4" data-aos="fade-right">
+
+                    <div class="item">
+                        <h2>
+                            <img src="images/codeing.png" alt="codeing">
+                            <span class="neno_sub_headding"> Frontend Development</span>
+                            <span class="pragrath">More then 3 yesrs</span>
+                        </h2>
+                        <div class="skills_bar">
+                            <div>
+                                <h4 class="pragrath">HTML</h4>
+                                <div class="progress_html"></div>
+                            </div>
+                            <div>
+                                <h4 class="pragrath">CSS</h4>
+                                <div class="progress_css"></div>
+                            </div>
+                            <div>
+                                <h4 class="pragrath">Bootstrap</h4>
+                                <div class="progress_bs"></div>
+                            </div>
+                            <div>
+                                <h4 class="pragrath">SASS / SASS</h4>
+                                <div class="progress_sass"></div>
+                            </div>
+                            <div>
+                                <h4 class="pragrath">JavaScript</h4>
+                                <div class="progress_js"></div>
                             </div>
                         </div>
+
                     </div>
                 </div>
-                <div class="col-lg-4 offset-lg-1">
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2>
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <img src="images/codeing.png" alt="codeing">
-                                    <span class="neno_sub_headding">Graphics Design</span>
-                                    <span class="pragrath">More then 3 yesrs</span>
-                                </button>
-                            </h2>
-                            <div class="skills_bar">
-                                <div>
-                                    <h4 class="pragrath">Photoshop</h4>
-                                    <div class="progress_ps"></div>
-                                </div>
-                                <div>
-                                    <h4 class="pragrath">illustrator</h4>
-                                    <div class="progress_li"></div>
-                                </div>
-                                <div>
-                                    <h4 class="pragrath">Figma</h4>
-                                    <div class="progress_fg"></div>
-                                </div>
-                                <div>
-                                    <h4 class="pragrath">XD / SASS</h4>
-                                    <div class="progress_xd"></div>
-                                </div>
+                <div class="col-lg-4 offset-lg-1" data-aos="fade-left">
+                    <div class="item">
+                        <h2>
+                            <img src="images/codeing.png" alt="codeing">
+                            <span class="neno_sub_headding">Graphics Design</span>
+                            <span class="pragrath">More then 3 yesrs</span>
+                        </h2>
+                        <div class="skills_bar">
+                            <div>
+                                <h4 class="pragrath">Photoshop</h4>
+                                <div class="progress_ps"></div>
+                            </div>
+                            <div>
+                                <h4 class="pragrath">illustrator</h4>
+                                <div class="progress_li"></div>
+                            </div>
+                            <div>
+                                <h4 class="pragrath">Figma</h4>
+                                <div class="progress_fg"></div>
+                            </div>
+                            <div>
+                                <h4 class="pragrath">XD / SASS</h4>
+                                <div class="progress_xd"></div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -254,11 +248,11 @@
 
     <section id="services" class="section">
         <div class="container">
-            <div class="tittle">
+            <div class="tittle" data-aos="zoom-in-down">
                 <h4 class="head_tittle">Service</h4>
                 <p class="sub_tittle">what i offer</p>
             </div>
-            <div class="service_lisr_slider">
+            <div class="service_lisr_slider" data-aos="fade-right">
                 <div class="slide_item">
                     <span class="shape"></span>
                     <img src="images/design.png" alt="design">
@@ -319,34 +313,45 @@
 
     <section id="portfolio" class="section">
         <div class="container">
-            <div class="tittle">
+            <div class="tittle" data-aos="zoom-in-down">
                 <h4 class="head_tittle">Portfolio</h4>
                 <p class="sub_tittle">what i offer</p>
             </div>
-            <div class="port_slider mb-5">
+            <div class="port_slider mb-5" data-aos="fade-left">
                 <div class="port_item">
+                    <div class="img_bg img_11"></div>
                     <div class="overlay">
-                        <a href="#" class="greenbtn mt-4"> Live Demo <i class="fas fa-chevron-right"></i></a>
+                        <a target="_blank" href="https://kamrujs.github.io/gymnasium/" class="greenbtn mt-4"> Live Demo
+                            <i class="fas fa-chevron-right"></i></a>
                     </div>
-                    <img src="images/port_img.png" alt="port_img">
+                    <h5 class="sub_headding port_headding">Gyemnasiom || Gyem Webpage</h5>
                 </div>
+
                 <div class="port_item">
+                    <div class="img_bg img_12"></div>
                     <div class="overlay">
-                        <a href="#" class="greenbtn mt-4"> Live Demo <i class="fas fa-chevron-right"></i></a>
+                        <a target="_blank" href="https://kamrujs.github.io/mogo/" class="greenbtn mt-4"> Live Demo <i
+                                class="fas fa-chevron-right"></i></a>
                     </div>
-                    <img src="images/port_img.png" alt="port_img">
+                    <h5 class="sub_headding port_headding">Mogan || Personal portfolio</h5>
                 </div>
+
                 <div class="port_item">
+                    <div class="img_bg img_3"></div>
                     <div class="overlay">
-                        <a href="#" class="greenbtn mt-4"> Live Demo <i class="fas fa-chevron-right"></i></a>
+                        <a target="_blank" href="https://kamrujs.github.io/applop/" class="greenbtn mt-4"> Live Demo <i
+                                class="fas fa-chevron-right"></i></a>
                     </div>
-                    <img src="images/port_img.png" alt="port_img">
+                    <h5 class="sub_headding port_headding">APPLIO || App Landing page</h5>
                 </div>
+
                 <div class="port_item">
+                    <div class="img_bg img_10"></div>
                     <div class="overlay">
-                        <a href="#" class="greenbtn mt-4"> Live Demo <i class="fas fa-chevron-right"></i></a>
+                        <a target="_blank" href="https://kamrujs.github.io/U_like/" class="greenbtn mt-4"> Live Demo <i
+                                class="fas fa-chevron-right"></i></a>
                     </div>
-                    <img src="images/port_img.png" alt="port_img">
+                    <h5 class="sub_headding port_headding">ULIKE || Business Landing page</h5>
                 </div>
             </div>
             <a href="port_demo_page.html" class="greenbtn mt-4"> View all Demos <i class="fas fa-chevron-right"></i></a>
@@ -359,12 +364,17 @@
 
     <!-- ============== newproject-section start here -->
 
-    <section id="new_project">
-        <div class="contant">
-            <h4 class="neno_sub_headding mb-3">You have a new project?</h4>
-            <p class="pragrath"><span>Cantact me now and get a nice descount on your</span>
-                new project.</p>
-            <a href="#" class="greenbtn mt-4"> Contant Me <i class="fas fa-chevron-right"></i></a>
+    <section id="new_project" data-aos="zoom-in-down">
+        <div class="contant d-flex p-5 mx-auto">
+            <div class="text">
+                <h4 class="text-white neno_sub_headding mb-3">You have a new project?</h4>
+                <p class="pragrath"><span class="d-block">Cantact me now and get a nice descount on your</span>
+                    new project.</p>
+                <a href="#" class="greenbtn mt-4"> Contant Me <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="img">
+                <img src="images/Customer_service_boy.png" alt="">
+            </div>
         </div>
     </section>
 
@@ -377,12 +387,12 @@
 
     <section id="contact_me" class="section">
         <div class="container">
-            <div class="tittle">
+            <div class="tittle" data-aos="zoom-in-down">
                 <h4 class="head_tittle">Contact Me</h4>
                 <p class="sub_tittle">Get in touch</p>
             </div>
             <div class="row center">
-                <div class="col-lg-3 ">
+                <div class="col-lg-3" data-aos="fade-right">
                     <a href="tel:+8801811803398">
                         <i class="fas fa-phone-alt"></i>
                         <span class="neno_sub_headding">Make a Call</span>
@@ -399,7 +409,7 @@
                         <span class="neno_sub_headding cont">1236, Dhaka, Bangladesh</span>
                     </a>
                 </div>
-                <div class="col-lg-6 offset-lg-1">
+                <div class="col-lg-6 offset-lg-1" data-aos="fade-left">
                     <form>
                         <div class="item">
                             <input placeholder="Your Name" class="neno_sub_headding relative" type="text">
@@ -428,16 +438,19 @@
 
     <!-- ============== footer-section end here -->
 
-    <footer>
+    <footer data-aos="fade-up">
         <div class="img mb-5"> <img src="images/logo.png" alt="logo"></div>
         <ul>
-            <li><a href="https://www.linkedin.com/in/kamrujs/" target="_blank"> <i class="fab fa-linkedin-in"></i> </a>
+            <li><a href="https://www.linkedin.com/in/kamrujs/" target="_blank"> <i
+                        class="rotate fab fa-linkedin-in"></i> </a>
             </li>
-            <li><a href="https://www.facebook.com/kamrujs/" target="_blank"> <i class="fab fa-facebook-f"></i> </a></li>
-            <li><a href="https://github.com/kamrujs" target="_blank"> <i class="fab fa-github"></i> </a></li>
-            <li><a href="https://www.instagram.com/kamruj.akash/" target="_blank"> <i class="fab fa-instagram"></i> </a>
+            <li><a href="https://www.facebook.com/kamrujs/" target="_blank"> <i class="rotate fab fa-facebook-f"></i>
+                </a></li>
+            <li><a href="https://github.com/kamrujs" target="_blank"> <i class="rotate fab fa-github"></i> </a></li>
+            <li><a href="https://www.instagram.com/kamruj.akash/" target="_blank"> <i
+                        class="rotate fab fa-instagram"></i> </a>
             </li>
-            <li><a href="https://twitter.com/kamruj_s" target="_blank"> <i class="fab fa-twitter"></i> </a></li>
+            <li><a href="https://twitter.com/kamruj_s" target="_blank"> <i class="rotate fab fa-twitter"></i> </a></li>
         </ul>
     </footer>
 
@@ -448,7 +461,7 @@
 
     <!-- ========back to top btn -->
 
-    <button type="button" id="back_to_top" title="Go to top"
+    <button type="button" class="back_to_top" title="Go to top"
         class="d-flex align-items-center justify-content-center transition-2 rounded">
         <i class="fas fa-arrow-up"></i>
     </button>
@@ -470,6 +483,7 @@
     <script src="js/jQuery.rProgressbar.min.js"></script>
     <script src="js/typed.min.js"></script>
     <script src="js/onepageNav.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/script.js"></script>
 </body>
 

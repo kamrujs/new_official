@@ -190,7 +190,7 @@ $('.port_slider').slick({
 
 // ======== Back to top annimate
 
-$("#back_to_top").click(function () {
+$(".back_to_top").click(function () {
     $("html,body").animate({
         scrollTop: 0,
     }, )
@@ -247,11 +247,11 @@ $(window).scroll(function () {
         $(".addFix").removeClass("fixedMenu")
     }
 
-    // if ($(window) > 1000) {
-    //     $("#back_to_top").fadeIn()
-    // } else {
-    //     $("#back_to_top").fadeOut()
-    // }
+    if ($(window).scrollTop() > 550) {
+        $(".back_to_top").fadeIn(500)
+    } else {
+        $(".back_to_top").fadeOut(500)
+    }
 })
 
 // ----- end
@@ -265,21 +265,9 @@ jQuery('.scroll').onePgaeNav({
 
 
 
-// ============= small screen side bar
+// ============= aos annimation
 
-
-
-
-
-// $(document).on('resize, ready', function () {
-//     // Add class if screen size equals
-//     var $window = $(window),
-//         $html = $('html');
-
-//     function resize() {
-//         if ($window.width() < 992) {
-//             return $(".side_bar").addClass('show_bar');
-//         } else $(".side_bar").removeClass('show_bar');
-//     }
-//     $window.resize(resize).trigger('resize');
-// });
+AOS.init({
+    duration: 600,
+    once: true,
+});

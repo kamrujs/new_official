@@ -101,6 +101,9 @@
         padding: 60px 0 40px;
     }
 
+    #services .slide_item {
+        filter: drop-shadow(7px 7px 15px rgba(0, 0, 0, 0.1));
+    }
 
     /* ========= portfolio */
 
@@ -124,7 +127,7 @@
     }
 
     #contact_me a {
-        width: 50%;
+        width: 80%;
     }
 
 
@@ -250,6 +253,9 @@
         padding: 60px 0 40px;
     }
 
+    #services .slide_item {
+        filter: drop-shadow(7px 7px 15px rgba(0, 0, 0, 0.1));
+    }
 
     /* ========= portfolio */
 
@@ -273,7 +279,7 @@
     }
 
     #contact_me a {
-        width: 50%;
+        width: 80%;
     }
 
 
