@@ -16,7 +16,6 @@ var typed = new Typed('.type', {
 // == frontend development
 $('.progress_html').rProgressbar({
     percentage: 90,
-    fillBackgroundColor: '#10AC84',
     backgroundColor: '#E5E5E5',
     borderRadius: '5px',
     height: '5px',
@@ -25,7 +24,6 @@ $('.progress_html').rProgressbar({
 });
 $('.progress_css').rProgressbar({
     percentage: 90,
-    fillBackgroundColor: '#10AC84',
     backgroundColor: '#E5E5E5',
     borderRadius: '5px',
     height: '5px',
@@ -34,7 +32,6 @@ $('.progress_css').rProgressbar({
 });
 $('.progress_bs').rProgressbar({
     percentage: 80,
-    fillBackgroundColor: '#10AC84',
     backgroundColor: '#E5E5E5',
     borderRadius: '5px',
     height: '5px',
@@ -43,7 +40,6 @@ $('.progress_bs').rProgressbar({
 });
 $('.progress_sass').rProgressbar({
     percentage: 60,
-    fillBackgroundColor: '#10AC84',
     backgroundColor: '#E5E5E5',
     borderRadius: '5px',
     height: '5px',
@@ -52,7 +48,6 @@ $('.progress_sass').rProgressbar({
 });
 $('.progress_js').rProgressbar({
     percentage: 20,
-    fillBackgroundColor: '#10AC84',
     backgroundColor: '#E5E5E5',
     borderRadius: '5px',
     height: '5px',
@@ -63,7 +58,6 @@ $('.progress_js').rProgressbar({
 // == graphics design
 $('.progress_ps').rProgressbar({
     percentage: 80,
-    fillBackgroundColor: '#10AC84',
     backgroundColor: '#E5E5E5',
     borderRadius: '5px',
     height: '5px',
@@ -72,7 +66,6 @@ $('.progress_ps').rProgressbar({
 });
 $('.progress_li').rProgressbar({
     percentage: 40,
-    fillBackgroundColor: '#10AC84',
     backgroundColor: '#E5E5E5',
     borderRadius: '5px',
     height: '5px',
@@ -81,7 +74,6 @@ $('.progress_li').rProgressbar({
 });
 $('.progress_fg').rProgressbar({
     percentage: 60,
-    fillBackgroundColor: '#10AC84',
     backgroundColor: '#E5E5E5',
     borderRadius: '5px',
     height: '5px',
@@ -90,7 +82,6 @@ $('.progress_fg').rProgressbar({
 });
 $('.progress_xd').rProgressbar({
     percentage: 50,
-    fillBackgroundColor: '#10AC84',
     backgroundColor: '#E5E5E5',
     borderRadius: '5px',
     height: '5px',
@@ -194,49 +185,9 @@ $(".back_to_top").click(function () {
     $("html,body").animate({
         scrollTop: 0,
     }, )
-})
+});
 
 // ----- end
-
-// ======== Back to top annimate
-$('a[href*="#"]')
-    // Remove links that don't actually link to anything
-    .not('[href="#"]')
-    .not('[href="#0"]')
-    .click(function (event) {
-        // On-page links
-        if (
-            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-            location.hostname == this.hostname
-        ) {
-            // Figure out element to scroll to
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            // Does a scroll target exist?
-            if (target.length) {
-                // Only prevent default if animation is actually gonna happen
-                event.preventDefault();
-                $('html, body').animate({
-                    scrollTop: target.offset().top
-                }, 800, function () {
-                    // Callback after animation
-                    // Must change focus!
-                    var $target = $(target);
-                    $target.focus();
-                    if ($target.is(":focus")) { // Checking if the target was focused
-                        return false;
-                    } else {
-                        $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                        $target.focus(); // Set focus again
-                    };
-                });
-            }
-        }
-    });
-
-// ----- end
-
-
 
 
 // ======== fixed menu
@@ -252,15 +203,14 @@ $(window).scroll(function () {
     } else {
         $(".back_to_top").fadeOut(500)
     }
-})
+});
 
 // ----- end
+
 
 jQuery('.scroll').onePgaeNav({
     wrapper: '#onepage-nav',
 });
-
-
 
 
 // ============= aos annimation
@@ -270,16 +220,13 @@ AOS.init({
     once: true,
 });
 
-
 // ========== preloader
-
 
 
 
 /* Preloader */
 $(window).on('load', function () {
     var preloaderFadeOutTime = 500;
-
     function hidePreloader() {
         var preloader = $('.spinner-wrapper');
         setTimeout(function () {
@@ -294,6 +241,16 @@ $(window).on('load', function () {
 
 var icon = document.getElementById("dark_icon")
 
-icon.onclick = function(){
+icon.onclick = function () {
     document.body.classList.toggle("dark_theme")
-}
+};
+
+// ========= service pop
+
+$(".pop_open").click(function () {
+    document.getElementById("service_pop").style.transform = "scale(1)";
+});
+
+$(".close").click(function () {
+    document.getElementById("service_pop").style.transform = "scale(0)";
+});

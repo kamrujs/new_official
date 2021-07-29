@@ -16,7 +16,7 @@
     --primary-color: #f8f8f8;
     --secondary-color: #191524;
     --third-color: #1f1e32;
-    --green-color: #10AC84;
+    --green-color: #FF0066;
 }
 
 ul,
@@ -225,6 +225,7 @@ body {
 
 .navbar .navbar-brand img {
     transition: .5s;
+    width: 100%;
 }
 
 
@@ -292,12 +293,6 @@ body {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-
-.navbar .dark_btn .dark {
-    border: none;
-    background: transparent;
-}
-
 .navbar .dark_btn i {
     font-size: 18px;
     color: var(--secondary-color);
@@ -308,6 +303,7 @@ body {
     background: var(--primary-color);
     border-radius: 50%;
     transform: rotate(-35deg);
+    cursor: pointer;
 }
 
 
@@ -316,9 +312,10 @@ body {
     background: var(--secondary-color);
 }
 
-.fixedMenu {
-    padding: 0 !important;
-    padding-bottom: .5rem !important;
+.fixedMenu {}
+
+.fixedMenu .navbar-brand img {
+    width: 80%;
 }
 
 .fixedMenu .navbar-brand {
@@ -331,6 +328,10 @@ body {
 
 .fixedMenu ul li a {
     font-size: 18px;
+}
+
+.port_page .navbar ul {
+    padding-right: 125px;
 }
 
 /* ============= nav end here */
@@ -426,6 +427,10 @@ body {
     text-align: center;
 }
 
+.port_page #banner_hero {
+    padding: 120px 0 0;
+}
+
 /* ============= hero end here */
 
 
@@ -504,6 +509,10 @@ body {
 .skills_bar {
     padding-left: 20px;
 }
+.proggress {
+    background-color: var(--green-color) !important;
+}
+
 /* ============= skills end here */
 
 
@@ -524,9 +533,6 @@ body {
     margin: 25px 50px;
     transition: .4s;
     overflow: hidden;
-}
-
-#services .slide_item .shape {
     position: relative;
 }
 
@@ -539,10 +545,6 @@ body {
     background: var(--green-color);
     transform: rotate(-45deg);
     transition: .5s;
-    opacity: 0;
-}
-
-#services .slide_item:hover .shape {
     opacity: 1;
 }
 
@@ -557,6 +559,8 @@ body {
 #services .slide_item .pragrath {
     font-size: 15px;
     transition: .5s;
+    cursor: pointer;
+
 }
 
 #services .slide_item:hover {
@@ -601,6 +605,44 @@ body {
 }
 
 /* ---slick slider */
+
+/* -------- service popup */
+
+#service_pop {
+    width: 100%;
+    height: 100vh;
+    background: #00000059;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: 99999;
+    transform: scale(0);
+}
+
+#service_pop .item {
+    width: 365px;
+    height: 275px;
+    border-radius: 25px;
+    background: var(--third-color);
+    position: relative;
+}
+
+#service_pop .greenbtn {
+    padding: 15px 14px;
+    line-height: 0px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+#service_pop .close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 25px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
 
 /* ============= service end here */
 
@@ -762,6 +804,9 @@ body {
 
 /* ---slick slider */
 
+.port_page #portfolio {
+    padding: 0 0 30px;
+}
 
 /* ============= portfolio end here */
 
@@ -911,7 +956,7 @@ body {
 
 footer {
     padding: 60px 0;
-    background: var(--green-color);
+    background: var(--third-color);
     text-align: center;
 }
 
