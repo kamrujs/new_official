@@ -263,11 +263,37 @@ jQuery('.scroll').onePgaeNav({
 
 
 
-
-
 // ============= aos annimation
 
 AOS.init({
     duration: 600,
     once: true,
 });
+
+
+// ========== preloader
+
+
+
+
+/* Preloader */
+$(window).on('load', function () {
+    var preloaderFadeOutTime = 500;
+
+    function hidePreloader() {
+        var preloader = $('.spinner-wrapper');
+        setTimeout(function () {
+            preloader.fadeOut(preloaderFadeOutTime);
+        }, 500);
+    }
+    hidePreloader();
+});
+
+
+// =========== dark
+
+var icon = document.getElementById("dark_icon")
+
+icon.onclick = function(){
+    document.body.classList.toggle("dark_theme")
+}

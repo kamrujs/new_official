@@ -5,6 +5,20 @@
     padding: 0;
 }
 
+:root {
+    --primary-color: #080808;
+    --secondary-color: #f8f8f8;
+    --third-color: #F2F3F9;
+    --green-color: #10AC84;
+}
+
+.dark_theme {
+    --primary-color: #f8f8f8;
+    --secondary-color: #191524;
+    --third-color: #1f1e32;
+    --green-color: #10AC84;
+}
+
 ul,
 ol {
     list-style: none;
@@ -28,7 +42,7 @@ p {
 }
 
 body {
-    background: #F8F8FB;
+    background: var(--secondary-color);
     font-family: 'Nunito', sans-serif;
     transition: .4s;
 }
@@ -42,40 +56,40 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 22px;
     font-weight: 400;
-    color: #080808;
+    color: var(--primary-color);
 }
 
 .headding {
     font-size: 45px;
     font-weight: 700;
-    color: #080808;
+    color: var(--primary-color);
     font-family: 'Nunito', sans-serif;
 }
 
 .typed-cursor {
-    color: #10AC84;
+    color: var(--green-color);
 }
 
 .sub_headding {
     font-size: 28px;
     font-weight: 600;
-    color: #080808;
+    color: var(--primary-color);
     font-family: 'Nunito', sans-serif;
 }
 
 .neno_sub_headding {
     font-size: 24px;
     font-weight: 600;
-    color: #080808;
+    color: var(--primary-color);
     font-family: 'Nunito', sans-serif;
 }
 
 .greenbg {
-    background: #10AC84;
+    background: var(--green-color);
 }
 
 .greenfont {
-    color: #10AC84;
+    color: var(--green-color);
 }
 
 
@@ -87,9 +101,9 @@ body {
     height: 50px; */
     padding: 5px 20px;
     line-height: 50px;
-    background: #10AC84;
+    background: var(--green-color);
     text-align: center;
-    color: #fff;
+    color: var(--secondary-color);
     border-radius: 12px;
     font-size: 22px;
     font-weight: 700;
@@ -141,7 +155,7 @@ body {
 }
 
 .greenbtn:hover {
-    color: #fff;
+    color: var(--secondary-color);
     transform: translateY(-4px);
 }
 
@@ -155,14 +169,14 @@ body {
 .head_tittle {
     font-size: 35px;
     font-weight: 700;
-    color: #080808;
+    color: var(--primary-color);
     font-family: 'Nunito', sans-serif;
 }
 
 .sub_tittle {
     font-size: 16px;
     font-weight: 600;
-    color: #080808;
+    color: var(--primary-color);
     font-family: 'Nunito', sans-serif;
 }
 
@@ -178,7 +192,7 @@ body {
     content: "";
     width: 25px;
     height: 2px;
-    background: #10AC84;
+    background: var(--green-color);
     transform: translateY(-50%);
 }
 
@@ -189,7 +203,7 @@ body {
     content: "";
     width: 25px;
     height: 2px;
-    background: #10AC84;
+    background: var(--green-color);
     transform: translateY(-50%);
 }
 
@@ -218,13 +232,13 @@ body {
     font-size: 20px;
     margin: 0 10px;
     font-weight: 600;
-    color: #080808;
+    color: var(--primary-color);
     position: relative;
     transition: .4s;
 }
 
 .navbar ul li .active {
-    color: #10AC84;
+    color: var(--green-color);
 }
 
 .navbar ul li a::before {
@@ -234,7 +248,7 @@ body {
     content: "";
     width: 100%;
     height: 2px;
-    background: #10AC84;
+    background: var(--green-color);
     border-radius: 5px;
     transition: transform 0.4s ease-in, -webkit-transform 0.4s ease-in;
     transform: scaleX(0);
@@ -248,7 +262,7 @@ body {
     width: 70%;
     content: "";
     height: 2px;
-    background: #10AC84;
+    background: var(--green-color);
     border-radius: 5px;
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
     transform: scaleX(0);
@@ -256,7 +270,7 @@ body {
 }
 
 .navbar ul li a:hover {
-    color: #10AC84;
+    color: var(--green-color);
 }
 
 .navbar ul li a:hover::before {
@@ -286,12 +300,12 @@ body {
 
 .navbar .dark_btn i {
     font-size: 18px;
-    color: #fff;
+    color: var(--secondary-color);
     width: 35px;
     height: 35px;
     line-height: 35px;
     text-align: center;
-    background: #000;
+    background: var(--primary-color);
     border-radius: 50%;
     transform: rotate(-35deg);
 }
@@ -299,7 +313,7 @@ body {
 
 .fixedMenu {
     box-shadow: 0px 2px 21px 13px rgba(138, 97, 97, 0.10);
-    background: #F8F8FB;
+    background: var(--secondary-color);
 }
 
 .fixedMenu {
@@ -341,9 +355,9 @@ body {
     height: 35px;
     line-height: 35px;
     border-radius: 50%;
-    background: #10AC84;
+    background: var(--green-color);
     text-align: center;
-    color: #fff;
+    color: var(--secondary-color);
     margin: 10px 0;
 }
 
@@ -399,7 +413,7 @@ body {
 }
 
 .scroll_down a:hover {
-    color: #080808;
+    color: var(--primary-color);
     transform: translateY(5px);
 }
 
@@ -504,7 +518,7 @@ body {
 #services .slide_item {
     /* width: 280px !important; */
     padding: 50px 0 40px;
-    background: #F2F3F9;
+    background: var(--third-color);
     border-radius: 8px;
     text-align: center;
     margin: 25px 50px;
@@ -522,7 +536,7 @@ body {
     left: -88px;
     width: 200px;
     height: 100px;
-    background: #10AC84;
+    background: var(--green-color);
     transform: rotate(-45deg);
     transition: .5s;
     opacity: 0;
@@ -550,12 +564,12 @@ body {
 }
 
 #services .slide_item:hover h4 {
-    color: #10AC84;
+    color: var(--green-color);
 }
 
 #services .view:hover {
     transform: scale(1.1);
-    color: #10AC84;
+    color: var(--green-color);
     text-decoration: underline;
 }
 
@@ -583,7 +597,7 @@ body {
 
 #services .slick-dots .slick-active button {
     width: 25px;
-    background: #10AC84;
+    background: var(--green-color);
 }
 
 /* ---slick slider */
@@ -602,7 +616,7 @@ body {
 
 .port_item {
     margin: 20px;
-    border: 5px solid #10AC84;
+    border: 5px solid var(--green-color);
     border-radius: 8px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
@@ -617,10 +631,10 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
-    background: #10AC84;
+    background: var(--green-color);
     width: 100%;
     padding: 5px 0;
-    color: #fff;
+    color: var(--secondary-color);
     font-size: 22px;
 }
 
@@ -743,7 +757,7 @@ body {
 
 #portfolio .slick-dots .slick-active button {
     width: 25px;
-    background: #10AC84;
+    background: var(--green-color);
 }
 
 /* ---slick slider */
@@ -765,17 +779,17 @@ body {
 #new_project .contant {
     width: 840px;
     border-radius: 15px;
-    background: #10AC84;
+    background: var(--green-color);
 }
 
 #new_project .contant .pragrath {
     font-size: 15px;
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 #new_project .contant .greenbtn {
-    color: #10AC84;
-    background: #fff;
+    color: var(--green-color);
+    background: var(--secondary-color);
     padding: 5px 14px;
     line-height: 30px;
     border-radius: 8px;
@@ -802,7 +816,7 @@ body {
 
 #contact_me .cont {
     font-size: 16px;
-    color: #3f3f3f;
+    color: var(--primary-color);
 }
 
 #contact_me a {
@@ -817,7 +831,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     font-size: 40px;
-    color: #080808;
+    color: var(--primary-color);
     transition: .4s;
 }
 
@@ -827,7 +841,7 @@ body {
 }
 
 #contact_me a:hover span {
-    color: #10AC84;
+    color: var(--green-color);
 }
 
 #contact_me a:hover i {
@@ -856,7 +870,7 @@ body {
     position: absolute;
     top: 15px;
     left: 20px;
-    color: #000;
+    color: var(--primary-color);
     z-index: 9;
     font-size: 14px;
 }
@@ -865,7 +879,7 @@ body {
     width: 100%;
     height: 50px;
     border-radius: 5px;
-    background: #E9E9E9;
+    background: var(--third-color);
     padding-left: 15px;
     border: none;
     font-size: 15px;
@@ -877,7 +891,7 @@ body {
     height: 180px;
     resize: none;
     border-radius: 5px;
-    background: #E9E9E9;
+    background: var(--third-color);
     padding-left: 15px;
     padding-top: 15px;
     border: none;
@@ -897,7 +911,7 @@ body {
 
 footer {
     padding: 60px 0;
-    background: #10AC84;
+    background: var(--green-color);
     text-align: center;
 }
 
@@ -912,15 +926,15 @@ footer ul li a {
     height: 45px;
     text-align: center;
     line-height: 45px;
-    background: #fff;
-    color: #080808;
+    background: var(--secondary-color);
+    color: var(--primary-color);
     border-radius: 50%;
     font-size: 20px;
     transition: .5s;
 }
 
 footer ul li a:hover {
-    color: #10AC84;
+    color: var(--green-color);
     transform: translateY(-5px);
 }
 
@@ -937,9 +951,9 @@ footer ul li a:hover {
     right: 0;
     z-index: 9999;
     font-size: 25px;
-    background: #10AC84;
+    background: var(--green-color);
     border-radius: 5px;
-    color: #fff;
+    color: var(--secondary-color);
     border: none;
     cursor: pointer;
     width: 45px;
@@ -972,5 +986,83 @@ footer ul li a:hover {
     100% {
         right: 3rem;
         bottom: 4rem;
+    }
+}
+/* ============= Preloader */
+
+
+/*************************/
+/*     02. Preloader     */
+/*************************/
+.spinner-wrapper {
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #2f2c3d;
+}
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    /* centers the loading animation vertically one the screen */
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    width: 3.75rem;
+    height: 1.25rem;
+    margin: -0.625rem 0 0 -1.875rem;
+    /* is width and height divided by two */
+    text-align: center;
+}
+
+.spinner>div {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    background-color: var(--secondary-color);
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+    }
+
+    40% {
+        -webkit-transform: scale(1.0);
+    }
+}
+
+@keyframes sk-bouncedelay {
+
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+    }
+
+    40% {
+        -webkit-transform: scale(1.0);
+        -ms-transform: scale(1.0);
+        transform: scale(1.0);
     }
 }
