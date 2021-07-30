@@ -40,6 +40,10 @@
 
     /* ======== nav */
 
+    .navbar-brand {
+        margin: 0;
+    }
+
     .Nav_doc {
         position: fixed;
         left: -100%;
@@ -57,7 +61,7 @@
 
     .nav_open {
         cursor: pointer;
-        margin-right: 20px;
+        margin-left: 10px;
         font-size: 25px;
         color: var(--primary-color);
         transition: .4s;
@@ -243,7 +247,9 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
 
     /* ======== nav */
-
+    .navbar-brand {
+        margin: 0;
+    }
 
     .Nav_doc {
         position: fixed;
@@ -262,7 +268,7 @@
 
     .nav_open {
         cursor: pointer;
-        margin-right: 20px;
+        margin-left: 20px;
         font-size: 25px;
         color: var(--primary-color);
         transition: .4s;
@@ -492,6 +498,9 @@
 
     /* ======== nav */
 
+    .navbar-brand {
+        margin: 0;
+    }
 
     .Nav_doc {
         position: fixed;

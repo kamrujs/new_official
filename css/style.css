@@ -226,6 +226,7 @@ body {
 .navbar .navbar-brand img {
     transition: .5s;
     width: 100%;
+    display: block;
 }
 
 
@@ -316,6 +317,7 @@ body {
 
 .fixedMenu .navbar-brand img {
     width: 80%;
+    margin: 0 auto !important;
 }
 
 .fixedMenu .navbar-brand {

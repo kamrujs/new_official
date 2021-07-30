@@ -210,15 +210,16 @@ $(window).scroll(function () {
 
 jQuery('.scroll').onePgaeNav({
     wrapper: '#onepage-nav',
+    speed: 500,
 });
 
 
 // ============= aos annimation
 
-AOS.init({
-    duration: 600,
-    once: true,
-});
+// AOS.init({
+//     duration: 400,
+//     once: true,
+// });
 
 // ========== preloader
 
@@ -256,6 +257,8 @@ $(".close").click(function () {
     document.getElementById("service_pop").style.transform = "scale(0)";
 });
 
+
+
 // =========== side bar open close
 
 $(".nav_open").click(function () {
@@ -263,5 +266,9 @@ $(".nav_open").click(function () {
 });
 
 $(".nav_close").click(function () {
+    $(".Nav_doc").removeClass("Nav_opened");
+});
+
+$(".Nav_doc").click(function () {
     $(".Nav_doc").removeClass("Nav_opened");
 });
