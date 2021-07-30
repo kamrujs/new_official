@@ -1,0 +1,24 @@
+{
+    "recommendations": [
+        "babobski.bootstrap-5-snippets",
+        "andrewpolemeni.bootstrap-5-form-snippets",
+        "hansuxdev.bootstrap5-snippets",
+        "ahmadawais.shades-of-purple",
+        "formulahendry.auto-rename-tag",
+        "formulahendry.auto-close-tag",
+        "marqu3s.aurora-x",
+        "akamud.vscode-theme-onedark",
+        "tobiasalthoff.atom-material-theme",
+        "eliverlara.andromeda",
+        "coderfoundry.bootstrap-5-snippets-by-coder-foundry",
+        "yummygum.city-lights-theme",
+        "dracula-theme.theme-dracula",
+        "medzhidov.font-awesome-codes-html",
+        "ritwickdey.liveserver",
+        "pkief.material-icon-theme",
+        "sdras.night-owl",
+        "zhuangtongfa.material-theme",
+        "ionutvmi.path-autocomplete",
+        "christian-kohler.path-intellisense"
+    ]
+}

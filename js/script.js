@@ -227,6 +227,7 @@ AOS.init({
 /* Preloader */
 $(window).on('load', function () {
     var preloaderFadeOutTime = 500;
+
     function hidePreloader() {
         var preloader = $('.spinner-wrapper');
         setTimeout(function () {
@@ -253,4 +254,14 @@ $(".pop_open").click(function () {
 
 $(".close").click(function () {
     document.getElementById("service_pop").style.transform = "scale(0)";
+});
+
+// =========== side bar open close
+
+$(".nav_open").click(function () {
+    $(".Nav_doc").addClass("Nav_opened");
+});
+
+$(".nav_close").click(function () {
+    $(".Nav_doc").removeClass("Nav_opened");
 });

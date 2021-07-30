@@ -38,6 +38,63 @@
         margin-bottom: 25px;
     }
 
+    /* ======== nav */
+
+    .Nav_doc {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.548);
+        z-index: 9999;
+        transition: .5s !important;
+    }
+
+    .Nav_opened {
+        left: 0;
+    }
+
+    .nav_open {
+        cursor: pointer;
+        margin-right: 20px;
+        font-size: 25px;
+        color: var(--primary-color);
+        transition: .4s;
+    }
+
+    .nav_close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 25px;
+        cursor: pointer;
+        transition: .4s;
+        color: var(--primary-color);
+    }
+
+    .icon_hover:hover {
+        color: var(--green-color);
+    }
+
+
+    .Nav_doc ul {
+        width: 60%;
+        height: 100%;
+        background: var(--secondary-color);
+        margin: 0 !important;
+        padding: 30px;
+        padding-top: 40px;
+        position: relative;
+    }
+
+    .Nav_doc ul li a {
+        display: inline-block;
+        padding: 5px 10px !important;
+        padding-left: 0 !important;
+        margin-bottom: 10px;
+    }
+
     /* ===== common css */
     #banner_hero {
         padding: 150px 0 60px;
@@ -174,16 +231,74 @@
             right: .5rem;
             bottom: 4rem;
         }
-        }
+    }
 
     /*  */
 }
 
 
-/* ============ mid device */
+/* ============ sm  device */
 
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+
+    /* ======== nav */
+
+
+    .Nav_doc {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.548);
+        z-index: 9999;
+        transition: .5s !important;
+    }
+
+    .Nav_opened {
+        left: 0;
+    }
+
+    .nav_open {
+        cursor: pointer;
+        margin-right: 20px;
+        font-size: 25px;
+        color: var(--primary-color);
+        transition: .4s;
+    }
+
+    .nav_close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 25px;
+        cursor: pointer;
+        transition: .4s;
+        color: var(--primary-color);
+    }
+
+    .icon_hover:hover {
+        color: var(--green-color);
+    }
+
+
+    .Nav_doc ul {
+        width: 60%;
+        height: 100%;
+        background: var(--secondary-color);
+        margin: 0 !important;
+        padding: 30px;
+        padding-top: 40px;
+        position: relative;
+    }
+
+    .Nav_doc ul li a {
+        display: inline-block;
+        padding: 5px 10px !important;
+        padding-left: 0 !important;
+        margin-bottom: 10px;
+    }
 
     .headding {
         font-size: 35px;
@@ -300,15 +415,15 @@
         text-align: center;
         margin: 0 20px !important;
         flex-direction: column-reverse;
-        }
+    }
 
-        #new_project .text {
-            width: 100%;
-        }
+    #new_project .text {
+        width: 100%;
+    }
 
-        #new_project .img {
-            width: 100%;
-            margin-bottom: 20px;
+    #new_project .img {
+        width: 100%;
+        margin-bottom: 20px;
     }
 
 
@@ -369,4 +484,67 @@
 
 
     /*  */
+}
+/* -----============ mid device */
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* ======== nav */
+
+
+    .Nav_doc {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.548);
+        z-index: 9999;
+        transition: .5s !important;
+    }
+
+    .Nav_opened {
+        left: 0;
+    }
+
+    .nav_open {
+        cursor: pointer;
+        margin-right: 20px;
+        font-size: 25px;
+        color: var(--primary-color);
+        transition: .4s;
+    }
+
+    .nav_close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 25px;
+        cursor: pointer;
+        transition: .4s;
+        color: var(--primary-color);
+    }
+
+    .icon_hover:hover {
+        color: var(--green-color);
+    }
+
+
+    .Nav_doc ul {
+        width: 60%;
+        height: 100%;
+        background: var(--secondary-color);
+        margin: 0 !important;
+        padding: 30px;
+        padding-top: 40px;
+        position: relative;
+    }
+
+    .Nav_doc ul li a {
+        display: inline-block;
+        padding: 5px 10px !important;
+        padding-left: 0 !important;
+        margin-bottom: 10px;
+    }
 }
