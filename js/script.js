@@ -100,7 +100,7 @@ $('.service_lisr_slider').slick({
     dots: true,
     infinite: true,
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,

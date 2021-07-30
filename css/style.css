@@ -57,6 +57,7 @@ body {
     font-size: 22px;
     font-weight: 400;
     color: var(--primary-color);
+    transition: .4s;
 }
 
 .headding {
@@ -64,6 +65,7 @@ body {
     font-weight: 700;
     color: var(--primary-color);
     font-family: 'Nunito', sans-serif;
+     transition: .4s;
 }
 
 .typed-cursor {
@@ -75,6 +77,7 @@ body {
     font-weight: 600;
     color: var(--primary-color);
     font-family: 'Nunito', sans-serif;
+     transition: .4s;
 }
 
 .neno_sub_headding {
@@ -82,6 +85,7 @@ body {
     font-weight: 600;
     color: var(--primary-color);
     font-family: 'Nunito', sans-serif;
+     transition: .4s;
 }
 
 .greenbg {
@@ -550,8 +554,14 @@ body {
     opacity: 1;
 }
 
-#services .slide_item img {
+/* #services .slide_item img {
     margin: 0 auto;
+}
+
+*/ #services .slide_item i {
+    font-size: 60px;
+    color: var(--primary-color);
+    transition: .5s;
 }
 
 #services .slide_item p span {
@@ -567,6 +577,10 @@ body {
 
 #services .slide_item:hover {
     filter: drop-shadow(7px 7px 15px rgba(0, 0, 0, 0.1));
+}
+
+#services .slide_item:hover i {
+    color: var(--green-color)
 }
 
 #services .slide_item:hover h4 {
